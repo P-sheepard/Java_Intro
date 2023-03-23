@@ -1,20 +1,21 @@
-package javaintro_examples;
+package javaintro.examples;
 
 /**
  *
  * @author Sheepard
  */
-public class javaintro_example02 {
+public class JavaintroExample02 {
 
     public static void main(String[] args) {
         /*¿Recuerdas las variables que creaste en el ejercicio anterior?
-               Ahora deberás asignarles un valor.*/
-        byte bt = 15;
-        int num = 951993;
-        float dec = 11.5f;
-        boolean bin = true;
-        char lett = 'a';
-        String str = "Sheep";
+        Ahora deberás asignarles un valor.*/
+
+        byte num1 = 15;
+        int num2 = 951993;
+        float decimal = 11.5f;
+        boolean flag = true;
+        char letter1 = 'a';
+        String line = "Sheep";
 
         //Deteccion de errores:
         int numero = 48;

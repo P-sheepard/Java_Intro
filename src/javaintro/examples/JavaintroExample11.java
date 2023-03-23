@@ -1,4 +1,4 @@
-package javaintro_examples;
+package javaintro.examples;
 
 import java.util.Scanner;
 
@@ -6,24 +6,29 @@ import java.util.Scanner;
  *
  * @author Sheepard
  */
-public class javaintro_example11 {
+public class JavaintroExample11 {
 
     public static void main(String[] args) {
         /*Realice un subprograma que reciba una secuencia de caracteres y retorne la codificación
-correspondiente. Utilice la estructura “según” para la transformación.*/
+        correspondiente: a = @, e = #, i = $, o = %, u = *. 
+        Utilice la estructura “según” para la transformación.*/
+
         Scanner read = new Scanner(System.in);
 
         int i = 0;
-
-        System.out.println("Ingrese una frase");
+        char letter;
+        System.out.println("Ingrese una frase terminada en punto.");
         String str = read.nextLine();
 
+        System.out.println("Codificacion:");
+
         do {
-            char lett = str.charAt(i);
-            if (lett == '.') {
-                i = str.length()+1;
+            letter = str.charAt(i);
+            if (letter == '.') {
+                i = str.length() + 1;
             }
-            replace(lett);
+
+            replace(letter);
             i++;
         } while (i < str.length());
 
